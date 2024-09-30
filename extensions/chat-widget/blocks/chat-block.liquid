@@ -1,0 +1,31 @@
+{% render 'chat-widget' %}
+
+
+
+{% schema %}
+{
+  "name": "Search Widget",
+  "target": "body",
+  "stylesheet": "output.css",
+  "javascript": "chat-widget.js",
+  "settings": [
+    {
+      "type": "select",
+      "id": "widget_position",
+      "label": "Widget Position",
+      "default": "bottom_left",
+      "options": [
+        {
+          "label": "Bottom Left",
+          "value": "bottom_left"
+        },
+        {
+          "label": "Bottom Right",
+          "value": "bottom_right"
+        }
+      
+      ]
+    }]
+}
+{% endschema %}
+
